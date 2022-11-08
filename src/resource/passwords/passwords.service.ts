@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Password, passwordDocument } from 'src/schema/passwords.schma';
-import { CreateUrlDto } from 'src/urls/urls.dto';
+import { CreateUrlDto } from 'src/resource/urls/urls.dto';
 import { CreatePasswordDto, UpdatePasswordDto } from './passwords.dto';
 
 @Injectable()
