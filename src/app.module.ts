@@ -5,13 +5,19 @@ import { AppService } from './app.service';
 import { TodosModule } from './resource/todos/todos.module';
 import { UrlsModule } from './resource/urls/urls.module';
 import { PasswordsModule } from './resource/passwords/passwords.module';
+import { WalletModule } from './resource/wallet/wallet.module';
+import { IncomeWalletModule } from './resource/wallet/income-wallet/income-wallet.module';
+import { SpendWalletModule } from './resource/wallet/spend-wallet/spend-wallet.module';
 
 @Module({
   imports: [
     MongooseModule.forRoot('mongodb://localhost:27017/dashboard'),
     TodosModule,
     UrlsModule,
-    PasswordsModule
+    PasswordsModule,
+    WalletModule,
+    IncomeWalletModule,
+    SpendWalletModule
   ],
   controllers: [AppController],
   providers: [AppService],
