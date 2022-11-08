@@ -34,7 +34,7 @@ export class UrlsService {
   }
   
   async remove(id: string) {
-    const updatedUrl = await this.urls.findByIdAndDelete(id)
-    return updatedUrl
+    const deletedUrl = await this.urls.findByIdAndDelete(id)
+    return deletedUrl
   }
 }
