@@ -9,6 +9,7 @@ import { WalletModule } from './resource/wallet/wallet.module';
 import { IncomeWalletModule } from './resource/wallet/income-wallet/income-wallet.module';
 import { SpendWalletModule } from './resource/wallet/spend-wallet/spend-wallet.module';
 import { NotesModule } from './resource/notes/notes.module';
+import { UsersModule } from './resource/users/users.module';
 
 @Module({
   imports: [
@@ -19,7 +20,8 @@ import { NotesModule } from './resource/notes/notes.module';
     WalletModule,
     IncomeWalletModule,
     SpendWalletModule,
-    NotesModule
+    NotesModule,
+    UsersModule
   ],
   controllers: [AppController],
   providers: [AppService],
