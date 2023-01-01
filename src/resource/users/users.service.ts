@@ -12,6 +12,7 @@ export class UsersService {
     const selectedClass = this.users
     const createdUser = new selectedClass(createUserDto)
     createdUser.save()
+    return createdUser
   }
 
     //USER CRUD
