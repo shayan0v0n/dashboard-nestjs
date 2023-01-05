@@ -139,7 +139,7 @@ export class UsersController {
       return this.usersService.removeSpendWallet(userId, spendeId)
     }
   
-    @Get('/:id/incomeWallet')
+    @Get('/:id/spendWallet')
     getUserSpendWallet(@Param('id') userId: string) {
       return this.usersService.getUserSpendWallet(userId)
     }
